@@ -8911,6 +8911,7 @@ header .contacts .email {
 .main-section__cart .border-dashed {
   position: relative;
   border: 1px dashed #F1F0F0;
+  border-radius: 8px;
 }
 .main-section button {
   line-height: 0px;
