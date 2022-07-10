@@ -8913,6 +8913,8 @@ header .contacts .email {
   border: 1px dashed #F1F0F0;
 }
 .main-section button {
+  line-height: 0px;
+  display: block;
   height: 60px;
   width: 329px;
   background: url(../assest/img/button-one.svg);
