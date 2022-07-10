@@ -167,6 +167,11 @@ body {
   line-height: 150%;
 }
 
+.fs-30 {
+  font-size: 30px;
+  line-height: 150%;
+}
+
 .fs-50 {
   font-size: 50px;
 }
@@ -8838,7 +8843,11 @@ header .address__location {
   width: -moz-fit-content;
   width: fit-content;
 }
+header i {
+  font-size: 28px;
+}
 header .social-clubs {
+  height: 30px;
   padding-left: 10px;
   padding-right: 10px;
   border-left: 1px solid #D9D9D9;
@@ -8848,6 +8857,10 @@ header .social-clubs ul {
   -webkit-column-gap: 12.6px;
      -moz-column-gap: 12.6px;
           column-gap: 12.6px;
+}
+header .social-clubs li {
+  height: 30px;
+  width: 30px;
 }
 header .contacts .phone_number {
   -webkit-font-feature-settings: "pnum" on, "lnum" on;
