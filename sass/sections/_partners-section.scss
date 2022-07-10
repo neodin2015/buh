@@ -1,0 +1,16 @@
+.partners-section{
+    @extend %cart;
+    .grid{
+        gap: 30px;
+    }
+    .title{
+        max-width: 723px;
+    }
+    
+    @extend %grid-columns;
+    @media (max-width:620px) {
+        h2{
+            font-size: 32px;
+        }
+    }
+}

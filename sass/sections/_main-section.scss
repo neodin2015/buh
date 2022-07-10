@@ -1,0 +1,63 @@
+.main-section{
+    p{
+        max-width: 1001px / 1772px * 100%;
+        width: fit-content;
+    }
+    h1{
+        width: 1060px / 1772px * 100%;
+    }
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background: url(../assest/img/main-bg.png) no-repeat top right, linear-gradient(159.46deg, #FAFAFA 28.71%, #F7F6FB 139.39%);
+    &__cart{
+        padding: 4px 6px;    
+        flex-basis: 454px;
+        img{
+            display: block;
+        }
+        .calculate-picture{
+            height: 54px;
+        }
+        .cash-picture{
+            height: 63px;
+        }
+        .text{
+            width: fit-content;
+        }
+        .border-dashed{
+            position: relative;
+            // background: url(../assest/img/border.svg) no-repeat;
+           border: 1px dashed #F1F0F0;
+        }
+        background: #fff;
+        border-radius: 8px;
+    }
+    button{
+        height: 60px;
+        width: 329px;
+        background: url(../assest/img/button-one.svg);
+    }
+    @media (max-width:1280px) {
+        background-image: none;
+        padding-top: 45px;
+        padding-bottom: 45px;
+
+    }
+    @media (max-width:964px) {
+        h1{
+            width: 100%;
+        }
+    }
+    @media (max-width:620px) {
+        p{
+            max-width: 100%;
+        }
+        .main-section__cart{
+            margin: 0 auto;
+        }
+        button{
+            margin: 0 auto;
+        }
+      }
+
+}

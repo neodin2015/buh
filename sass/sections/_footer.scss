@@ -1,0 +1,78 @@
+@mixin input-icon($url) {
+    @extend %input-icon;
+    background:url(../assest/icons/#{$url}) no-repeat center center, rgb(220, 203, 203);
+    
+}
+
+footer{
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 90px;
+        padding-left: 60px;
+        margin-bottom: 55px;
+        @media (max-width:876px) {
+            grid-template-columns: 190px;
+            justify-content: center;
+        }
+    }
+    .caption{
+        max-width:626px;
+        display: flex;
+        margin-left:  auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+    padding-top: 111px;
+    padding-bottom: 129px;
+    background: linear-gradient(100.78deg, rgba(155, 0, 2, 0.8) 0.39%, #FF6B6D 99.02%);
+    .container{
+        max-width: 808px;
+        margin: 0 auto;
+    }
+    
+    input{
+        border-radius: 0px;
+        border: 0;
+        position: relative;
+        padding-left: 17px;
+        width: 190px;
+        outline: none;
+        background: white;
+        font-size: 14px;
+        line-height: 17.6px;
+        height: 60px;
+        &::placeholder{
+            color: #B8B8B8;
+        }
+    }
+    .inputs{
+        column-gap: 90px;
+        row-gap: 10px;
+    }
+    .inputs>*{
+        position: relative;
+    }
+    button{
+        width: 250px;
+        height: 60px;
+        margin: 0 auto;
+        background: url(../assest/img/button-send.svg);
+    }
+    .name-input{  
+        &::before{
+            @include input-icon("people-icon.svg");
+        }
+    }
+    .email-input {
+        &::before{
+            @include input-icon("mail-icon.svg");
+        }
+    }
+    .phone-input {
+        &::before{
+            @include input-icon("phone-icon.svg");
+        }
+    }
+    
+}

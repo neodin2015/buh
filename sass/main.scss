@@ -1,0 +1,11 @@
+@import './utils/fonts';
+@import './utils/vars';
+@import './reset';
+@import '_base';
+@import "_templates";
+@import './sections/index';
+
+body{
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+

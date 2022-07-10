@@ -1,0 +1,18 @@
+.reviews-section{
+    background: #F1F1F1;
+    @extend %cart;
+    .grid{
+        column-gap: 20px;
+        row-gap: 21px;
+    }
+    .cart{
+        &__title::after{
+            margin-left: 20px !important;
+            }
+        &__content{
+            border-top: 1px dashed #F1F0F0;
+        } 
+
+    }
+    @extend %grid-columns;
+} 

@@ -1,0 +1,45 @@
+.about-section{
+    background: #FCFCFC;
+    .cart{
+        color: white;
+        &__caption{
+            font-size: 18px;
+            line-height: 150%;
+        }
+        &__count{
+            font-size: 50px;
+            line-height: 150%;
+        }
+        &-1{
+            background: rgba(230, 67, 69, 0.5);
+        }
+        &-2{
+            background: rgba(230, 67, 69, 0.8);
+        }
+        &-3{
+            background: rgba(230, 67, 69, 0.5);
+        }
+        &-4{
+            background: rgba(230, 67, 69, 0.8);
+        }
+        &-5{
+            background: $accent;
+            grid-column: span 2;
+        }
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 0.7fr 1.5fr;
+    }
+    @extend %grid-columns;
+    .desc{
+        padding-right: 205px;
+        grid-column: 1/ span 2;
+    }
+    @media (max-width:620px) {
+        .desc{
+            padding-left: 10;
+            padding-right: 10px;
+        }
+    }
+}
