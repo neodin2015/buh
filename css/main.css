@@ -6387,7 +6387,8 @@ header {
 .main-section {
   padding-top: 188px;
   padding-bottom: 188px;
-  background: url(../assest/img/main-bg.png) no-repeat top right, linear-gradient(159.46deg, #FAFAFA 28.71%, #F7F6FB 139.39%); }
+  background: url(../assest/img/main-bg.png) no-repeat top right, linear-gradient(159.46deg, #FAFAFA 28.71%, #F7F6FB 139.39%);
+  background-size: contain; }
   .main-section p {
     max-width: 56.4898419865%;
     width: fit-content; }
