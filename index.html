@@ -68,8 +68,7 @@
                                     <img src="assest/icons/calculate.png" alt="calculate" class="calculate-picture">
                                 </div>
                                 <div class="text opacity-5 fs-18">Сократим ващи расходы и вовремя сдадим отчетность
-                                </div>
-                            </div>
+                                </div>                            </div>
                         </div>
                         <div class="main-section__cart mr-30">
                             <div class="border-dashed flex a-center pt-13 pb-16 pl-29">
@@ -77,6 +76,7 @@
                                     <img src="assest/icons/cash.png" alt="calculate" class="cash-picture">
                                 </div>
                                 <div class="text opacity-5 fs-18">Бесплатная консультация</div>
+                                <div class="arrow"></div>
                             </div>
                         </div>
                     </div>
@@ -87,6 +87,8 @@
             </section>
             <section class="desc-section bg_second pt-50 pb-100">
                 <div class="container-1">
+                    <div class="bank bank_left"></div>
+                    <div class="bank bank_right"></div>
                     <div class="grid">
                         <div class="title opacity-8a">
                             <h2 class="bold fs-50 mb-30">В чем плюсы аутсорсинга бухгалтерии</h2>
@@ -572,23 +574,26 @@
                 <div class="caption text_center c_white fs-20 mb-40">
                     Оставьте заявку и получите бесплатную консультацию в течении 7 дней
                 </div>
-                <form>
+                <form name="form">
+                    <div class="error text_center" id="error">
+                    </div>
                     <div class="grid inputs">
                         <label class="name-input"><input type="text" name="" placeholder="Ваше имя" id="name"></label>
                         <label class="email-input">
-                            <input type="email" placeholder="Ваш e-mail" name="" id="">
+                            <input type="email" placeholder="Ваш e-mail" name="" id="mail">
                         </label>
                         <label class="phone-input">
-                            <input type="text" name="" placeholder="Ваш телефон" id="">
+                            <input type="text" name="" placeholder="Ваш телефон" id="phone">
                         </label>
                     </div>
-                    <button class="button-send c_white fs-14 flex a-center j-center">
+                    <button id="send" class="button-send c_white fs-14 flex a-center j-center">
                         Отправить
                     </button>
                 </form>
             </div>
         </footer>
     </div>
+    <script src="script.js"></script>
 
 </body>
 

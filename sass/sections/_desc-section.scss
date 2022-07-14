@@ -1,5 +1,28 @@
 .desc-section{
+    position: relative;
+    .bank{
+        width: 144px;
+        height: 144px;
+        position: absolute;
+        background: url(../assest/img/Bank.png);
+    }
+    .bank_left{
+        left: 10px;
+        top: 422px;
+        transform: rotate(-26.01deg);
+    }
+    .bank_right{
+        right: 10px;
+        top: 86px;
+        transform: rotate(54.49deg);
+    }
+    @media (max-width:1280px) {
+        .bank{
+            display: none;
+        }
+    }
     .grid{
+        position: relative;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: minmax(305px, auto);
@@ -9,6 +32,7 @@
         grid-column: 1 / span 2;
     }
     .cart{
+        position: relative;
         .icon{
             height: 80px;
             width: 80px;

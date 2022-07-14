@@ -6,6 +6,15 @@
     h1{
         width: 1060px / 1772px * 100%;
     }
+    .arrow{
+        position: absolute;
+        top: 100px;
+        right: 40px;
+        width: 552px;
+        height: 78px;
+        background: url(../assest/img/arrow.svg) no-repeat;
+        background-size: 100% 100%;
+    }
     padding-top: 188px;
     padding-bottom: 188px;
     background: url(../assest/img/main-bg.png) no-repeat top right, linear-gradient(159.46deg, #FAFAFA 28.71%, #F7F6FB 139.39%);
@@ -34,6 +43,7 @@
         border-radius: 8px;
     }
     button{
+        position: relative;
         line-height: 0px;
         display: block;
         height: 60px;
