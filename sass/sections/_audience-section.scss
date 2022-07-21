@@ -17,14 +17,13 @@
         height: 489px;
         width: 100%;
         background: #E8ECEF;
-        @media (max-width:1600px) {
-            display: none;
-        }
+      
     }
     
     img{
-        width: 100%;
-        height: auto;
+        display: block;
+        width: auto;
+        height: 100%;
     }
     .container{
         position: relative;
@@ -53,6 +52,20 @@
             font-size: 32px;
             padding: 0;
         }
+        .bg-layer{
+            display: none;
+        }
     }
-    
+    .picture{
+        max-width: 626px;
+        overflow-x: hidden;
+    }
+    @media (max-width:964px) {
+        .flex{
+            flex-wrap: wrap-reverse;
+        }
+        .content{
+            padding: 10px;
+        }
+       }
 }

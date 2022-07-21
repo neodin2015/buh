@@ -174,8 +174,12 @@ body {
   .container.fluid, .container .fluid {
     width: 100%; }
 
+@media (max-width: 480px) {
+  h2 {
+    font-size: 30px !important; } }
 .container-1 {
   max-width: 1500px;
+  width: 1500px;
   margin: 0 auto; }
   @media (max-width: 1600px) {
     .container-1 {
@@ -6484,6 +6488,9 @@ header {
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: minmax(255px, auto);
   gap: 50px; }
+@media (max-width: 480px) {
+  .help-section {
+    padding-top: 50px; } }
 
 .about-section {
   background: #FCFCFC; }
@@ -6516,6 +6523,9 @@ header {
     .about-section .desc {
       padding-left: 10;
       padding-right: 10px; } }
+  @media (max-width: 480px) {
+    .about-section {
+      padding-top: 50px; } }
 
 .audience-section {
   position: relative;
@@ -6533,12 +6543,10 @@ header {
     height: 489px;
     width: 100%;
     background: #E8ECEF; }
-    @media (max-width: 1600px) {
-      .audience-section .bg-layer {
-        display: none; } }
   .audience-section img {
-    width: 100%;
-    height: auto; }
+    display: block;
+    width: auto;
+    height: 100%; }
   .audience-section .container {
     position: relative;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05); }
@@ -6559,7 +6567,17 @@ header {
       padding-top: 0px; }
       .audience-section h2 {
         font-size: 32px;
-        padding: 0; } }
+        padding: 0; }
+      .audience-section .bg-layer {
+        display: none; } }
+  .audience-section .picture {
+    max-width: 626px;
+    overflow-x: hidden; }
+  @media (max-width: 964px) {
+    .audience-section .flex {
+      flex-wrap: wrap-reverse; }
+    .audience-section .content {
+      padding: 10px; } }
 
 .reviews-section {
   background: #F1F1F1; }
@@ -6578,9 +6596,13 @@ header {
 @media (max-width: 620px) {
   .partners-section h2 {
     font-size: 32px; } }
+@media (max-width: 480px) {
+  .partners-section {
+    padding-top: 50px; } }
 
 .certificates-section {
-  color: #464547; }
+  color: #464547;
+  padding-right: 10px; }
   .certificates-section .certificates-board {
     gap: 60px; }
   .certificates-section .content {
@@ -6588,6 +6610,9 @@ header {
     padding-top: 205px;
     padding-bottom: 204px;
     flex-basis: 597px; }
+  .certificates-section img {
+    width: 100%;
+    height: auto; }
   .certificates-section .certificate {
     position: relative; }
     .certificates-section .certificate__bg {
@@ -6601,19 +6626,25 @@ header {
     .certificates-section .certificate__picture {
       position: relative;
       z-index: 2; }
-  @media (max-width: 1639px) {
-    .certificates-section .content {
-      flex-basis: 100%; } }
   @media (max-width: 1075px) {
-    .certificates-section .certificates-board {
-      max-width: 1000px; } }
+    .certificates-section {
+      padding-right: 0px; }
+      .certificates-section > .flex {
+        flex-wrap: wrap; }
+      .certificates-section .content {
+        padding: 20px;
+        flex-basis: 100%; }
+      .certificates-section .certificates-board {
+        padding-top: 40px;
+        padding-right: 10px;
+        padding-left: 10px;
+        justify-content: space-between; } }
   @media (max-width: 725px) {
     .certificates-section .certificates-board {
-      max-width: 700px; } }
-  @media (max-width: 620px) {
-    .certificates-section .content {
-      padding-left: 10px !important;
-      padding-right: 5px !important; } }
+      flex-wrap: wrap; } }
+  @media (max-width: 639px) {
+    .certificates-section .certificates-board {
+      justify-content: center; } }
 
 footer {
   padding-top: 111px;

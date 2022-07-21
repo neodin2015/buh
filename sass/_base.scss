@@ -206,17 +206,21 @@ body {
   //  max-width: 480px;
   //}
   //
-  //@media (max-width: 480px) {
-  //  max-width: 328px;
-  //}
+  
 
   &.fluid,
   & .fluid {
     width: 100%;
   }
 }
+@media (max-width: 480px) {
+  h2{
+    font-size: 30px !important;
+  } 
+ }
 .container-1{
   max-width: 1500px;
+  width: 1500px;
   margin: 0 auto;
   @media (max-width:1600px) {
     max-width: 1220px;
